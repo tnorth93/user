@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 
-
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <UserInput/>
+        <UserOutput userName="Tom"/>
+        <UserOutput userName="Tom"/>
+        <UserOutput userName="Tom"/>
+      </div>
+    );
+  }
 }
 
 export default App;
